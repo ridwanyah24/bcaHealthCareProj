@@ -1,0 +1,103 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --general-green: rgb(0, 150, 136);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+.main-content{
+  background-color: #808080f1
+}
+
+html, body, #__next {
+  height: 99%;
+}
+.close-icon{
+  position: absolute;
+}
+.min-h-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.font{
+  width: 25px;
+  height: 25px;
+  background-color: white;
+}
+
+.bb{
+  height: 100vh;
+}
+.mag{
+  color:black
+}
+.sidenav {
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.sidenav-open {
+  transform: translateX(0);
+}
+.services{
+  gap: 20px
+}
+body {
+  background-color: var(--background-end-rgb);
+  margin: 0;
+  padding: 0;
+
+}
+.customScroll{
+  height: 500px;
+}
+.newScrool{
+  height: 600px;
+}
+.adjust-width{
+  width:100%;
+}
+.custom{
+  height: 100vh;
+}
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: teal;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: cyan;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: cyan;
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
