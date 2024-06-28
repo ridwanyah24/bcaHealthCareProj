@@ -2,6 +2,8 @@ import { useState, useEffect, ReactNode } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/16/solid';
 import '@/app/globals.css';
 import GettingStarted from './getttingstarted';
+import BookService from './bookService';
+import JoinNetWork from './joinNetwork';
 
 function Slide({ children }:{children:ReactNode}) {
     return (
@@ -13,8 +15,8 @@ function Slide({ children }:{children:ReactNode}) {
 
 const slides = [
     { id: 1, content: <GettingStarted /> },
-    { id: 2, content: <GettingStarted /> },
-    { id: 3, content: <GettingStarted /> },
+    { id: 2, content: <JoinNetWork /> },
+    { id: 3, content: <BookService /> },
 ];
 
 export default function SlidingDiv() {
@@ -42,10 +44,10 @@ export default function SlidingDiv() {
                     </Slide>
                 ))}
             </div>
-            <button onClick={prevSlide} className='absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-teal-500 text-white rounded-full'>
+            <button onClick={prevSlide} className='absolute left-0 top-1/2 transform -translate-y-1/2 p-2 opacity-50 hover:bg-gray-200 bg-gray-500 text-white rounded-full'>
                 <ChevronLeftIcon className='h-8 w-8' />
             </button>
-            <button onClick={nextSlide} className='absolute right-0 top-1/2 transform -translate-y-1/2 p-2 bg-teal-500 text-white rounded-full'>
+            <button onClick={nextSlide} className='absolute right-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-500 opacity-50 hover:bg-gray-200 text-white rounded-full'>
                 <ChevronRightIcon className='h-8 w-8' />
             </button>
             <div className="absolute bottom-0 w-full flex justify-center pb-4">
