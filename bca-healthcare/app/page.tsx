@@ -1,10 +1,7 @@
 
-import { Suspense } from "react";
-import ServiceCat from "./ui/dashboard/servicecat";
 import Nav from "./ui/nav";
-import GettingStarted from "./ui/dashboard/getttingstarted";
-import ServiceCatSkeleton from "./ui/skeletons/servicecatskelton";
 import Dash from "./ui/dashboard/dash";
+import Footer from "./ui/footer";
 
 
 
@@ -12,7 +9,8 @@ export default function Home() {
   return (
     <div>
       <Nav/>
-      <Dash/>
+      <span className="min-h-screen"><Dash/></span>
+      <Footer />
     </div>
   );
 }

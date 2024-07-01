@@ -5,7 +5,8 @@ import Nav from "@/app/ui/nav";
 
 export default function Page(){
     return (
-        <div >
+        <div>
+            <Nav/>
             <Dash/>
         </div>
     )

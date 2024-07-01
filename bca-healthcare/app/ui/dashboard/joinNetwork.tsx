@@ -11,7 +11,7 @@ export default function JoinNetWork() {
             <div className='flex flex-col gap-6 lg:gap-8 text-left lg:text-left'>
                 <h1 className='text-2xl text-cyan-500 lg:text-3xl font-bold'>All Services Purchased on This Platform are Discounted</h1>
                 <p className='text-lg lg:text-xl'>Open an account today to register as a healthcare service provider</p>
-                <Button href='' classes='bg-teal-500 text-white px-4 py-2 rounded-md' name='JOIN THE NETWORK' />
+                <Button href='/dashboard/healthcare' classes='bg-teal-500 text-white px-4 py-2 rounded-md' name='JOIN THE NETWORK' />
             </div>
             <div className='w-full lg:w-1/2'>
                 <Image src="/theDoc.png" alt="image of doctors" width={500} height={500} className='object-contain lg:block hidden' />
