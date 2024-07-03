@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Lusitana } from "next/font/google";
-import "../globals.css";
+import "@/app/globals.css";
+
+
 
 const inter = Inter({ subsets: ["latin"] });
 const lusitana = Lusitana({subsets:["latin"], weight:"400"})
@@ -17,7 +19,7 @@ export default function Layout({
 }>) {
   return (
       <div className={`${lusitana.className}`}>
-        <span className="bg-gray-100 ">{children}</span>
+        <span className="bg-gray-100">{children}</span>
       </div>      
   );
 }

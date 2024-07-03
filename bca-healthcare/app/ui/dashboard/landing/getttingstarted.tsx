@@ -9,7 +9,7 @@ export default function GettingStarted() {
                 <div className='flex flex-col gap-6 lg:gap-8 lg:text-left'>
                     <h1 className='text-2xl text-cyan-500 lg:text-3xl font-bold text-left'>Welcome to BCA HealthCare Network</h1>
                     <p className='text-lg lg:text-xl text-justify'>Your Online Marketplace for healthcare services</p>
-                    <Button href='' classes='bg-teal-500 text-white px-4 py-2 rounded-md' name='GET STARTED' />
+                    <Button href='/dashboard/healthcare' classes='bg-teal-500 text-white px-4 py-2 rounded-md' name='GET STARTED' />
                 </div>
                 <div className='w-full lg:w-1/2'>
                     <Image src="/doc2.png" alt="image of doctors" width={500} height={500} className='object-contain lg:block hidden' />

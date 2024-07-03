@@ -8,7 +8,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image'
 import {useEffect, useState } from 'react'
 
-export default function Nav(){
+export default function Nav2(){
     const [isOpen, setIsOpen] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -88,12 +88,7 @@ export default function Nav(){
                 <ShoppingCartIcon className="h-6 w-6" />
             </Link>
             <Link href="/login" className="text-gray-700 p-2 hover:bg-gray-200 rounded w-fit">
-                Login
-            </Link>
-            <Link href="/dashboard/client-signup" className='w-fit'>
-                <button className="bg-teal-700 text-white p-2 rounded mt-2">
-                    SIGN UP
-                </button>
+                Logout
             </Link>
         </div>
         </div>
@@ -132,12 +127,7 @@ export default function Nav(){
                 <ShoppingCartIcon className="h-6 w-6" />
             </Link>
             <Link href="/login" className="text-gray-700 p-2 lg:p-4 hover:bg-gray-200 rounded">
-                Login
-            </Link>
-            <Link href="/dashboard/client-signup">
-                <button className="bg-teal-700 text-white p-2 rounded mt-2 lg:mt-0 lg:ml-4">
-                    SIGN UP
-                </button>
+                Logout
             </Link>
         </div>
     </div>

@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import { Inter, Lusitana } from "next/font/google";
 import "./globals.css";
-import Footer from "./ui/footer";
+import { SessionProvider } from "next-auth/react";
+import { Session } from "next-auth";
+// import { getServerSession } from "next-auth";
 
 
 
-const lusitana = Lusitana({subsets:["latin"], weight:"400"})
+export const lusitana = Lusitana({subsets:["latin"], weight:"400"})
 
-const inter = Inter({ subsets: ["latin"] });
+export const inter = Inter({ subsets: ["latin"] });
 
 
 export const metadata: Metadata = {
@@ -16,14 +18,17 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
+  children, session
 }: Readonly<{
   children: React.ReactNode;
+  session: Session| null
 }>) {
   return (
     <html lang="en">
       <body className={`${lusitana.className}`}>
+        {/* <SessionProvider session={session as Session | null}> */}
         <span className="min-h-screen bg-gray-100">{children}</span>
+        {/* </SessionProvider> */}
       </body>      
     </html>
   );

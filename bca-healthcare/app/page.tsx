@@ -1,6 +1,6 @@
 
 import Nav from "./ui/nav";
-import Dash from "./ui/dashboard/dash";
+import Dash from "./ui/dashboard/landing/dash";
 import Footer from "./ui/footer";
 
 

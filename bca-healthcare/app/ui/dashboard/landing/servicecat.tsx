@@ -54,12 +54,15 @@ export default function ServiceCat() {
     useEffect(() => {
         if (isOpen) {
             document.addEventListener('click', handleOutsideClick);
+            document.body.style.overflow ="hidden";
         } else {
             document.removeEventListener('click', handleOutsideClick);
-        }
+            document.body.style.overflow ="auto"
 
+        }
         return () => {
             document.removeEventListener('click', handleOutsideClick);
+            document.body.style.overflow ="auto"
         };
     }, [isOpen]);
 
