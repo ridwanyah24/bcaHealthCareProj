@@ -8,7 +8,6 @@ import { Session } from "next-auth";
 
 
 export const lusitana = Lusitana({subsets:["latin"], weight:"400"})
-
 export const inter = Inter({ subsets: ["latin"] });
 
 
@@ -18,10 +17,9 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children, session
+  children
 }: Readonly<{
   children: React.ReactNode;
-  session: Session| null
 }>) {
   return (
     <html lang="en">
