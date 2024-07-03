@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
-import { Inter, Lusitana } from "next/font/google";
 import "./globals.css";
-import { SessionProvider } from "next-auth/react";
-import { Session } from "next-auth";
+
+import { lusitana } from "./lib/fonts";
 // import { getServerSession } from "next-auth";
 
 
 
-export const lusitana = Lusitana({subsets:["latin"], weight:"400"})
-export const inter = Inter({ subsets: ["latin"] });
+
 
 
 export const metadata: Metadata = {
@@ -24,9 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${lusitana.className}`}>
-        {/* <SessionProvider session={session as Session | null}> */}
         <span className="min-h-screen bg-gray-100">{children}</span>
-        {/* </SessionProvider> */}
       </body>      
     </html>
   );

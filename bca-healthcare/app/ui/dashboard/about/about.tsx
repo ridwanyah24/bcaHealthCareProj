@@ -1,7 +1,6 @@
+import { lusitana, inter } from "@/app/lib/fonts";
 import Image from "next/image";
-import { lusitana } from "@/app/layout";
 import Link from "next/link";
-import { inter } from "@/app/layout";
 
 export default function AboutUs() {
     return (
