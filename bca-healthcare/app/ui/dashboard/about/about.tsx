@@ -55,7 +55,7 @@ export default function AboutUs() {
             <div className="flex flex-col lg:flex-row p-10 border-cyan-500">
             <div className="lg:w-1/2 lg:block hidden"></div>
                 <div className="grid gap-2 lg:w-1/2">
-                    <h3 className="capitalize font-bold border-l-4 border-cyan-500 text-xl p-2">Members' benefit and Privileges</h3>
+                    <h3 className="capitalize font-bold border-l-4 border-cyan-500 text-xl p-2">Members&apos; benefit and Privileges</h3>
                     <ol className="text-justify text-gray-500 list-disc lg:text-xl">
                         <li>Patronages and referrals through the centralized call 
                         contact centre administered by Benson Coleman & Associates.</li>
@@ -73,7 +73,7 @@ export default function AboutUs() {
 
             <div className="flex flex-col lg:flex-row p-10 border-cyan-500">
                 <div className="grid gap-2 lg:w-1/2">
-                    <h3 className="capitalize font-bold border-l-4 border-cyan-500 text-xl p-2">Members' benefits and privileges</h3>
+                    <h3 className="capitalize font-bold border-l-4 border-cyan-500 text-xl p-2">Members&apos; benefits and privileges</h3>
                     <ol className="text-justify text-gray-500 lg:text-xl list-disc">
                        <li>Help practitioners to develop clinical services strategies that guarantee efficiency and proper capacity utilization.</li>
                        <li>Coordinate bulk purchases and inventory management that ensures the best pricing for medical equipment and medical consumables</li>
