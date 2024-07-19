@@ -3,6 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function AboutUs() {
+
+    console.log("yess");
+    
     return (
         <div className={`${lusitana.className} grid lg:w-4/5 xl:w-3/5 lg:mx-auto lg:justify-center`}>
             <div className="flex flex-col lg:flex-row my-15 p-10 lg:justify-center">

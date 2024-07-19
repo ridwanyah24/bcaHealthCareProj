@@ -1,7 +1,6 @@
 'use client';
 
 import Image from "next/image";
-import { signUp } from "@/app/lib/actions";
 import Link from "next/link";
 
 export default function SignUpForm() {
@@ -10,7 +9,7 @@ export default function SignUpForm() {
             <div className="flex flex-col items-center lg:items-center mb-40 lg:w-1/2 p-4">
                 <Link href="/dashboard"><Image src="/icon.png" alt="Company Icon" width={50} height={50} /></Link>
                 <h1 className="text-2xl font-bold mt-4 mb-8 text-center lg:text-left">Join as a healthcare provider today</h1>
-                <form action={signUp} className="w-full max-w-md">
+                <form action='' className="w-full max-w-md">
                     <fieldset className="mb-4">
                         <legend className="block text-sm font-medium text-gray-700 mb-2">Company Name</legend>
                         <input 

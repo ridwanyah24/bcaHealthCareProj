@@ -5,7 +5,7 @@ import Footer from "./ui/footer";
 
 
 
-export default function Home() {
+export default function Page() {
   return (
     <div>
       <Nav/>

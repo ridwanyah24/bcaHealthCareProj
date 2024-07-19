@@ -1,8 +1,9 @@
 import Dash from "@/app/ui/dashboard/landing/dash";
+import ServiceList from "@/app/ui/dashboard/landing/serviceList";
+// import ServiceCard from "@/app/ui/dashboard/landing/servicesCard";
 import Footer from "@/app/ui/footer";
 import Nav from "@/app/ui/nav";
-import Nav2 from "@/app/ui/nav2";
-import { useSession } from "next-auth/react";
+// import { useSession } from "next-auth/react";
 
 
 export default function Page(){
@@ -10,9 +11,11 @@ export default function Page(){
 
     return (
         <div>
-            {/* {session ? <Nav2/> : <Nav />} */}
-            <Nav2/>
-            <span className="min-h-screen"><Dash/></span>
+            <Nav/>
+            <span className=" bg-gray-100">
+                <Dash/>
+                {/* <ServiceList/> */}
+            </span>
             <Footer/>
         </div>
     )

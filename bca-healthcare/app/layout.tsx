@@ -1,13 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
 import { lusitana } from "./lib/fonts";
-// import { getServerSession } from "next-auth";
-
-
-
-
-
+import { Providers } from "./lib/providers";
 
 export const metadata: Metadata = {
   title: "BCA HealthCare",
@@ -22,8 +16,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${lusitana.className}`}>
-        <span className="min-h-screen bg-gray-100">{children}</span>
-      </body>      
+      <Providers>
+        {children}
+      </Providers>
+      </body> 
     </html>
+   
   );
 }

@@ -16,8 +16,10 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
+    // <Provider store={store}>
       <div className={`${lusitana.className}`}>
-        <span className="bg-gray-100 ">{children}</span>
-      </div>      
+        <span className="bg-gray-100">{children}</span>
+      </div>  
+    // </Provider>    
   );
 }

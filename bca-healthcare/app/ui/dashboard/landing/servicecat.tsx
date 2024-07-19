@@ -4,14 +4,14 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { ChevronRightIcon, ChevronLeftIcon } from '@heroicons/react/16/solid';
 
-function Services({ isOpen }: { isOpen: boolean }) {
+function Services({ isOpen, id }: { isOpen: boolean, id:string}) {
     return (
         <div>
             <div className={`services absolute top-0 w-64 left-0 custom bg-gray-50 pl-8 shadow-lg customScroll transition-transform duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-full'} z-50`}>
                 <div className="grid gap-6 overflow-y-scroll h-96">
                     <p className="my-12 text-cyan-500 transform-capitalize text-lg">Service Category</p>
-                    <Link href=""><Image alt="" src="" /> Hospitals</Link>
-                    <Link href=""><Image alt="" src="" /> Laboratory Services</Link>
+                    <Link href={`/dashboard/services/${id}/showService`}><Image alt="" src="" /> Hospitals</Link>
+                    <Link href={`/dashboard/services/${id}/showService`}><Image alt="" src="" /> Laboratory Services</Link>
                     <Link href=""><Image alt="" src="" /> X-Ray Services</Link>
                     <Link href=""><Image alt="" src="" /> CT-Scan Services</Link>
                     <Link href=""><Image alt="" src="" /> MRI Services</Link>
@@ -41,7 +41,7 @@ function Services({ isOpen }: { isOpen: boolean }) {
     );
 }
 
-export default function ServiceCat() {
+export default function ServiceCat({id}:{id:string}) {
     const [isOpen, setIsOpen] = useState(false);
 
     const handleOutsideClick = (event: MouseEvent) => {
@@ -71,7 +71,7 @@ export default function ServiceCat() {
             {isOpen && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 z-40"></div>
             )}
-            <Services isOpen={isOpen} />
+            <Services isOpen={isOpen} id={id} />
             <button
                 onClick={() => setIsOpen(!isOpen)}
                 className={`menu-button ${isOpen ? "left-64" : "left-0"} text-gray-700 absolute my-12 bg-teal-600 lg:hidden 2xl:hidden xl:hidden rounded-s-sm z-50 rounded transition-all duration-300`}
