@@ -75,7 +75,7 @@ export default function LoginForm() {
                 )}
                 <div className="mt-6 space-y-2 text-center lg:text-left flex items-center">
                     <span className="pl-4 my-0">
-                        Don't have an account? <Link href="/signup" className="text-teal-600">Signup</Link>
+                        Don&apos;t have an account? <Link href="/signup" className="text-teal-600">Signup</Link>
                     </span>
                 </div>
             </div>

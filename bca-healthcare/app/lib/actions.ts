@@ -72,7 +72,7 @@ const ActivateAccountSchema = z.object({
     OTP: z.string().nonempty({ message: 'Please enter the OTP sent to your email.' }),
 });
 
-export async function activateAccount(formData: FormData) {
+export async function ActivateAccount(formData: FormData) {
     try {
         const data = {
             email: formData.get('email') as string,
